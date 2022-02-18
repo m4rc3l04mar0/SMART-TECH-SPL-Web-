@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+
+<navigation-rule>
+     <from-view-id>/login.xhtml</from-view-id>
+     <navigation-case>
+           <from-outcome>nuevoUsuario</from-outcome>
+           <to-view-id>/Usuarios/NuevoUsuario.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+     <navigation-case>
+           <from-outcome>listarUsuario</from-outcome>
+           <to-view-id>/Usuarios/ListarUsuarios.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+     <navigation-case>
+           <from-outcome>eliminarUsuario</from-outcome>
+           <to-view-id>/Usuarios/EliminarUsuarios.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+     <navigation-case>
+           <from-outcome>modificarUsuario</from-outcome>
+           <to-view-id>/Usuarios/ModificarUsuarios.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+          </navigation-case>
+          <navigation-case>
+           <from-outcome>salir</from-outcome>
+           <to-view-id>/Usuarios/login.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+          
+          <navigation-case>
+           <from-outcome>nuevoAlimento</from-outcome>
+           <to-view-id>/Usuarios/Alimentos/NuevoAlimento.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+     <navigation-case>
+           <from-outcome>listarAlimentos</from-outcome>
+           <to-view-id>/Usuarios/Alimentos/ListarAlimentos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+      <navigation-case>
+           <from-outcome>ModificarAlimentos</from-outcome>
+           <to-view-id>/Usuarios/Alimentos/ModificarAlimentos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case> 
+       <navigation-case>
+           <from-outcome>EventosClinicos</from-outcome>
+           <to-view-id>/Usuarios/Informes/EventosClinicos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case> 
+     <navigation-case>
+           <from-outcome>ConsumodeAlimentos</from-outcome>
+           <to-view-id>/Usuarios/Terneras/ConsumodeAlimentos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>  
+     <navigation-case>
+           <from-outcome>GananciadePeso</from-outcome>
+           <to-view-id>/Usuarios/Terneras/GananciadePeso.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>       
+          
+          
+          
+          
+          
+          <navigation-case>
+           <from-outcome>nuevoAlimento</from-outcome>
+           <to-view-id>/Alimentos/NuevoAlimento.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+     <navigation-case>
+           <from-outcome>listarAlimentos</from-outcome>
+           <to-view-id>/Alimentos/ListarAlimentos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>
+      <navigation-case>
+           <from-outcome>ModificarAlimentos</from-outcome>
+           <to-view-id>/Alimentos/ModificarAlimentos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case> 
+       <navigation-case>
+           <from-outcome>EventosClinicos</from-outcome>
+           <to-view-id>/Informes/EventosClinicos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case> 
+     <navigation-case>
+           <from-outcome>ConsumodeAlimentos</from-outcome>
+           <to-view-id>/Terneras/ConsumodeAlimentos.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>  
+     <navigation-case>
+           <from-outcome>GananciadePeso</from-outcome>
+           <to-view-id>/Terneras/GananciadePeso.xhtml</to-view-id>
+            <redirect include-view-params="true"></redirect>
+     </navigation-case>         
+</navigation-rule>
+</faces-config>

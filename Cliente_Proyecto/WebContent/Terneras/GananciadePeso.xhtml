@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+	<title>Ganancia de Peso</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</h:head> 
+<h:body> 
+		<div id="container">
+		<div id="header"><h1>Ganancia de Peso</h1></div>
+		<div id="mainContent">
+			<div id="sidebar">
+<h:form>
+	<p:menu>
+		<p:submenu label="Usuarios">
+			<p:menuitem value="Nuevo Usuario" disabled="true" outcome="/Usuarios/NuevoUsuario.xhtml"></p:menuitem>
+			<p:menuitem value="Lista de Usuarios" disabled="true" outcome="/Usuarios/ListarUsuarios.xhtml"></p:menuitem>
+			<p:menuitem value="Eliminar Usuarios" disabled="true" outcome="/Usuarios/EliminarUsuarios.xhtml"></p:menuitem>
+			<p:menuitem value="Modificar Usuarios" disabled="true" outcome="/Usuarios/ModificarUsuarios.xhtml"></p:menuitem>
+			<p:separator/>
+			
+		</p:submenu>
+		<p:submenu label="Alimentos">
+			<p:menuitem value="Nuevo Alimento" outcome="/Alimentos/NuevoAlimento.xhtml"></p:menuitem>
+			<p:menuitem value="Lista de Alimentos"  outcome="/Alimentos/ListarAlimentos.xhtml"></p:menuitem>
+			<p:menuitem value="Modificar Alimentos" outcome="/Alimentos/ModificarAlimentos.xhtml"></p:menuitem>
+			
+		</p:submenu>
+		
+		<p:submenu label="Terneras">
+			<p:menuitem value="Consumo de Alimentos" outcome="/Terneras/ConsumodeAlimentos.xhtml"></p:menuitem>
+			<p:menuitem value="Ganancia de Peso" outcome="/Terneras/GananciadePeso.xhtml"></p:menuitem>
+			<p:separator/>
+			
+		</p:submenu>
+		
+		<p:submenu label="Informes">
+			<p:menuitem value="Eventos Clinicos" outcome="/Informes/EventosClinicos.xhtml"></p:menuitem>
+			
+			<p:separator/>
+			
+		</p:submenu>
+		<p:submenu label="Salir">
+			<p:menuitem value="Salir" outcome="/Usuarios/login.xhtml"></p:menuitem>
+			
+			<p:separator/>
+			
+		</p:submenu>	
+	</p:menu>
+</h:form>
+			</div>
+		
+			<div id="content"><h:form>
+			<p:growl id="growl" showDetail="true" sticky="true" showSummary="false"/>
+<p:panelGrid columns="5">
+			Id Ternera:
+			<p:selectOneMenu value="#{peso.idTernera}" >
+				<f:selectItems value="#{ternera.ternerasL}"/>
+			</p:selectOneMenu>
+					
+			</p:panelGrid>
+		<p:panelGrid columns="5">
+			Tipo de Registro:
+			<p:selectOneMenu value="#{peso.tipoRegistro}" >
+				<f:selectItems value="#{peso.tipoRegistros}"/>
+			</p:selectOneMenu>
+					
+			</p:panelGrid>
+			<p:panelGrid columns="3">
+			Fecha de Registro: 
+			<p:inputText value="#{peso.fechaPeso}" style="width:90px" required="true">
+				<f:convertDateTime pattern = "dd-MM-yyyy"/>
+			</p:inputText>
+			</p:panelGrid>
+			<p:panelGrid columns="3">
+			 Peso: 
+			<p:inputText id="peso" value="#{peso.peso}" required="true" label="Peso" >
+			<p:keyFilter regEx="/[\d\-\.]/"/>
+			<f:validateLength maximum="4" />
+			</p:inputText> 
+			<p:message for="peso" style="color:red"/>
+			
+			
+			<p:commandButton value="Enviar" action="#{peso.ingresarPeso()}" update="growl"/>
+			</p:panelGrid>
+			
+		
+	</h:form>
+	
+			</div>
+							
+		</div>
+		<div id="footer"><img src="img/logo-pie.png" width="114" height="19" />
+			<span style="diplay.none"></span>
+		</div>
+		
+	
+	</div>
+</h:body> 
+</html>

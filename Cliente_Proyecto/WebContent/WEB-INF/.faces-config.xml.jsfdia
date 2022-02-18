@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#login.xhtml" PATH="/login.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#login.xhtml:0" NAME="item"
+   PATH="/login.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="nuevoUsuario::#Usuarios#NuevoUsuario.xhtml"
+    NAME="output" PATH="/Usuarios/NuevoUsuario.xhtml"
+    TARGET="rules:#Usuarios#NuevoUsuario.xhtml" TITLE="nuevoUsuario" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarUsuario::#Usuarios#ListarUsuarios.xhtml" NAME="output1"
+    PATH="/Usuarios/ListarUsuarios.xhtml"
+    TARGET="rules:#Usuarios#ListarUsuarios.xhtml" TITLE="listarUsuario" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="eliminarUsuario::#Usuarios#EliminarUsuarios.xhtml"
+    NAME="output2" PATH="/Usuarios/EliminarUsuarios.xhtml"
+    TARGET="rules:#Usuarios#EliminarUsuarios.xhtml"
+    TITLE="eliminarUsuario" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="modificarUsuario::#Usuarios#ModificarUsuarios.xhtml"
+    NAME="output3" PATH="/Usuarios/ModificarUsuarios.xhtml"
+    TARGET="rules:#Usuarios#ModificarUsuarios.xhtml"
+    TITLE="modificarUsuario" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="salir::#Usuarios#login.xhtml" NAME="output4"
+    PATH="/Usuarios/login.xhtml" TARGET="rules:#Usuarios#login.xhtml"
+    TITLE="salir" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarAlimentos::#Usuarios#Alimentos#ListarAlimentos.xhtml"
+    NAME="output5" PATH="/Usuarios/Alimentos/ListarAlimentos.xhtml"
+    TARGET="rules:#Usuarios#Alimentos#ListarAlimentos.xhtml"
+    TITLE="listarAlimentos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ModificarAlimentos::#Usuarios#Alimentos#ModificarAlimentos.xhtml"
+    NAME="output6" PATH="/Usuarios/Alimentos/ModificarAlimentos.xhtml"
+    TARGET="rules:#Usuarios#Alimentos#ModificarAlimentos.xhtml"
+    TITLE="ModificarAlimentos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="EventosClinicos::#Usuarios#Informes#EventosClinicos.xhtml"
+    NAME="output7" PATH="/Usuarios/Informes/EventosClinicos.xhtml"
+    TARGET="rules:#Usuarios#Informes#EventosClinicos.xhtml"
+    TITLE="EventosClinicos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ConsumodeAlimentos::#Usuarios#Terneras#ConsumodeAlimentos.xhtml"
+    NAME="output8" PATH="/Usuarios/Terneras/ConsumodeAlimentos.xhtml"
+    TARGET="rules:#Usuarios#Terneras#ConsumodeAlimentos.xhtml"
+    TITLE="ConsumodeAlimentos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="GananciadePeso::#Usuarios#Terneras#GananciadePeso.xhtml"
+    NAME="output9" PATH="/Usuarios/Terneras/GananciadePeso.xhtml"
+    TARGET="rules:#Usuarios#Terneras#GananciadePeso.xhtml"
+    TITLE="GananciadePeso" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="nuevoAlimento::#Alimentos#NuevoAlimento.xhtml" NAME="output10"
+    PATH="/Alimentos/NuevoAlimento.xhtml"
+    TARGET="rules:#Alimentos#NuevoAlimento.xhtml" TITLE="nuevoAlimento" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarAlimentos::#Alimentos#ListarAlimentos.xhtml"
+    NAME="output11" PATH="/Alimentos/ListarAlimentos.xhtml"
+    TARGET="rules:#Alimentos#ListarAlimentos.xhtml"
+    TITLE="listarAlimentos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ModificarAlimentos::#Alimentos#ModificarAlimentos.xhtml"
+    NAME="output12" PATH="/Alimentos/ModificarAlimentos.xhtml"
+    TARGET="rules:#Alimentos#ModificarAlimentos.xhtml"
+    TITLE="ModificarAlimentos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="EventosClinicos::#Informes#EventosClinicos.xhtml"
+    NAME="output13" PATH="/Informes/EventosClinicos.xhtml"
+    TARGET="rules:#Informes#EventosClinicos.xhtml"
+    TITLE="EventosClinicos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="ConsumodeAlimentos::#Terneras#ConsumodeAlimentos.xhtml"
+    NAME="output14" PATH="/Terneras/ConsumodeAlimentos.xhtml"
+    TARGET="rules:#Terneras#ConsumodeAlimentos.xhtml"
+    TITLE="ConsumodeAlimentos" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="GananciadePeso::#Terneras#GananciadePeso.xhtml" NAME="output15"
+    PATH="/Terneras/GananciadePeso.xhtml"
+    TARGET="rules:#Terneras#GananciadePeso.xhtml" TITLE="GananciadePeso" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Usuarios#NuevoUsuario.xhtml"
+  PATH="/Usuarios/NuevoUsuario.xhtml" SHAPE="240,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Alimentos#NuevoAlimento.xhtml"
+  PATH="/Alimentos/NuevoAlimento.xhtml" SHAPE="256,177,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#ListarUsuarios.xhtml"
+  PATH="/Usuarios/ListarUsuarios.xhtml" SHAPE="272,321,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Alimentos#ListarAlimentos.xhtml"
+  PATH="/Alimentos/ListarAlimentos.xhtml" SHAPE="272,433,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#EliminarUsuarios.xhtml"
+  PATH="/Usuarios/EliminarUsuarios.xhtml" SHAPE="288,577,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#ModificarUsuarios.xhtml"
+  PATH="/Usuarios/ModificarUsuarios.xhtml" SHAPE="288,689,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Alimentos#ModificarAlimentos.xhtml"
+  PATH="/Alimentos/ModificarAlimentos.xhtml" SHAPE="304,673,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Informes#EventosClinicos.xhtml"
+  PATH="/Informes/EventosClinicos.xhtml" SHAPE="304,705,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Terneras#ConsumodeAlimentos.xhtml"
+  PATH="/Terneras/ConsumodeAlimentos.xhtml" SHAPE="304,737,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Terneras#GananciadePeso.xhtml"
+  PATH="/Terneras/GananciadePeso.xhtml" SHAPE="304,769,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Alimentos#ModificarAlimentos.xhtml"
+  PATH="/Usuarios/Alimentos/ModificarAlimentos.xhtml"
+  SHAPE="304,1217,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Informes#EventosClinicos.xhtml"
+  PATH="/Usuarios/Informes/EventosClinicos.xhtml" SHAPE="304,1329,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Alimentos#NuevoAlimento.xhtml"
+  PATH="/Usuarios/Alimentos/NuevoAlimento.xhtml" SHAPE="304,769,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Alimentos#ListarAlimentos.xhtml"
+  PATH="/Usuarios/Alimentos/ListarAlimentos.xhtml" SHAPE="304,1105,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Terneras#ConsumodeAlimentos.xhtml"
+  PATH="/Usuarios/Terneras/ConsumodeAlimentos.xhtml"
+  SHAPE="304,1441,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Terneras#GananciadePeso.xhtml"
+  PATH="/Usuarios/Terneras/GananciadePeso.xhtml" SHAPE="304,1553,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#login.xhtml"
+  PATH="/Usuarios/login.xhtml" SHAPE="304,961,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
